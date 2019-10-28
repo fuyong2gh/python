@@ -1,17 +1,22 @@
-my_name = 'Fu Yong'
-my_age = 30 #not a lie
-my_height = 170 # cm
-my_weight = 79#Kg
-my_eyes = 'black'
-my_teeth = 'White'
-my_hair = 'Black'
+name = 'Fu Yong'
+age = 30 #not a lie
+height = 170 # cm
+weight = 79.8 #Kg
+eyes = 'black'
+teeth = 'White'
+hair = 'Black'
 
-print ("Let's talk about %s." % my_name)
+print (f"Let's talk about {name}.")
 
-print ("He's %d cm tall." % my_height)
-print ("He's %d kg heavy." % my_weight)
+print ("Let's talk about {0}.".format(name))
+print ("He's %d cm tall." % height)
+print ("He's", height/100," m tall.")
+print ("He's %d kg heavy.  After use round()" % round(weight))
+print (f"He's {weight} kg heavy.show it with diffrent way")
 print ("Actually that's not too heavy")
-print("He's got s% eyes and s% hair." %(my_eyes,my_hair))
-print("His teeth are usually %s depending on the coffee." % my_teeth)
+print("He's got %s eyes and %r hair." %(eyes,hair))
+print("His teeth are usually %s depending on the coffee." % teeth)
 # this line is tircky,try to get it exactly right
-print("If I add %d, %d, and %d I get %d."%(my_age,my_height,my_weight,my_age+my_height+my_weight))
+print("If I add %d, %d, and %d I get %d."%(age,height,weight,age+height+weight))
+total=age+height+weight
+print(f"If I add {age}, {height}, and {weight} I get {total}.")
